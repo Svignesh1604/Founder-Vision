@@ -1,0 +1,140 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color:#BEDC74;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+section {
+  padding: 20px;
+}
+
+.vision,
+.profile {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vision img,
+.profile img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.vision .content,
+.profile .content {
+  flex: 1;
+  padding: 20px;
+}
+
+.vision img {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.profile img {
+  flex: 1;
+  margin-left: 20px;
+  float: right;
+}
+.button {
+    background-color: cadetblue; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+
+.awards {
+  text-align: center;
+}
+
+.award-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.award-item img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.award-item p {
+  flex: 1;
+  padding: 20px;
+}
+
+
+
+.award-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+@media (max-width: 768px) {
+  .vision,
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vision img,
+  .profile img {
+    margin: 0 0 20px 0;
+  }
+
+  .award-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .award-item img {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  .vision img,
+  .profile img,
+  .award-item img {
+    width: 100%;
+  }
+
+  .vision .content,
+  .profile .content,
+  .award-item p {
+    padding: 10px;
+  }
+}
